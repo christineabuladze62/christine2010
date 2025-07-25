@@ -1,0 +1,155 @@
+/* ზოგადი reset და სტილი */
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  color: #333;
+  height: 100vh;
+  display: flex;
+  justify-content: center; /* ჰორიზონტალურად ცენტრში */
+  align-items: center;     /* ვერტიკალურად ცენტრში */
+  padding: 0 20px;
+}
+
+/* ნავიგაცია */
+nav {
+  width: 100%;
+  height: 50px;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  padding: 15px 30px;
+}
+
+nav img {
+  height: 40px;
+  margin-right: 40px;
+}
+
+nav div {
+  display: flex;
+  gap: 30px;
+}
+
+nav div a {
+  text-decoration: none;
+  font-size: 18px;
+  color: blue;
+  transition: color 0.3s;
+}
+
+nav div a.active,
+nav div a:hover {
+  color: red;
+}
+
+/* სურათების კონტეინერი */
+.images-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.images-container img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 0 6px rgba(0,0,0,0.1);
+}
+
+/* ჩემ შესახებ */
+.aboutme-container {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.aboutme-container img {
+  width: 520px;
+  height: 650px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 0 6px rgba(0,0,0,0.1);
+  margin-left: 150px;
+}
+
+.aboutme-text {
+  max-width: 270px;
+  text-align: justify;
+}
+
+/* Facebook share button */
+.fb-share {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  z-index: 100;
+}
+
+.fb-share img {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+/* Absolute positioned text containers - მაგალითად სურათზე */
+.container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.top-left {
+  position: absolute;
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.5); /* ნაცრისფერი ნახევრად გამჭვირვალე */
+  padding: 8px;
+  border-radius: 4px;
+  width: 398px;
+  height: 178px;
+  top: 167px;
+  left: 136px;
+  text-align: left;
+  letter-spacing: 0;
+  color: #E6E6E6;
+  opacity: 1;
+  font-size: 30px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .aboutme-container {
+    flex-direction: column;
+    margin-left: 0;
+  }
+  .aboutme-container img {
+    margin-left: 0;
+    width: 90%;
+    height: auto;
+  }
+  .aboutme-text {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+  .images-container {
+    gap: 20px;
+  }
+}

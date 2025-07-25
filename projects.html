@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Davaleba 3 - Projects</title>
+
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" href="https://christineabuladze62.github.io/davaleba4/css/style.css" />
+    <link rel="stylesheet" href="https://cdn.web-fonts.ge/fonts/bpg-nino-mtavruli/css/bpg-nino-mtavruli.min.css" />
+
+    <style>
+        nav {
+            display: flex;
+            align-items: center;
+            padding: 15px 30px;
+        }
+        nav img {
+            height: 30px;
+            margin-right: 40px;
+        }
+        nav div a {
+            color: blue;
+            text-decoration: none;
+            font-size: 18px;
+            margin-right: 30px;
+            transition: color 0.3s;
+        }
+        nav div a:last-child {
+            margin-right: 0;
+        }
+        nav div a:hover,
+        nav div a.active {
+            color: red;
+        }
+        h1 {
+            font-size: 100px;
+            color: rgb(13, 7, 95);
+            margin-left: 500px;
+        }
+        .projects-container {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+        .project {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 270px;
+        }
+        .project img {
+            height: 210px;
+            width: 270px;
+        }
+        .project p {
+            text-align: justify;
+        }
+        /* Responsive */
+        @media (max-width: 900px) {
+            h1 {
+                margin-left: 0;
+                text-align: center;
+                font-size: 60px;
+            }
+            .projects-container {
+                gap: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <img src="images/tibisi.png" alt="Tibisi Logo" />
+        <div>
+            <a href="index.html">მთავარი</a>
+            <a href="about.html">ჩემს შესახებ</a>
+            <a href="projects.html" class="active">პროექტები</a>
+            <a href="contact.html">კონტაქტი</a>
+        </div>
+    </nav>
+
+    <h1>PROJECTS</h1>
+
+    <div class="projects-container">
+        <div class="project">
+            <img src="images/pro1.jpg" alt="Moon Camp Challenge" />
+            <p>
+                One of the most memorable projects I've worked on is the Moon Camp Challenge, organized in collaboration with ESA and NASA. As a team, we designed a 3D model of a lunar base, thinking about how humans might live and work on the Moon. It was both challenging and exciting, and it taught me how to collaborate and solve real-world problems creatively.
+            </p>
+        </div>
+
+        <div class="project">
+            <img src="images/pro2.jpg" alt="3D Modeling Project" />
+            <p>
+                Through various 3D modeling projects, I have created detailed digital designs ranging from architectural models to creative concepts for competitions. One notable project involved designing a futuristic building, where I applied technical skills and artistic vision to bring the idea to life. These projects have strengthened my ability to plan, problem-solve, and communicate visually.
+            </p>
+        </div>
+
+        <div class="project">
+            <img src="images/pro3.jpg" alt="Literary Club" />
+            <p>
+                In the literary club, I participated in several projects including organizing reading sessions, writing short stories, and hosting debates on classic and modern literature. One key project was a collaborative anthology where club members contributed original poems and essays, which helped me improve my writing and teamwork skills while deepening my love for literature.
+            </p>
+        </div>
+    </div>
+
+    <a href="https://www.facebook.com/share/1NzMrPxYxc/" target="_blank" rel="noopener noreferrer" style="position: fixed; bottom: 10px; left: 10px;">
+        <img src="images/fb.jpg" alt="Facebook Share Button" style="width: 50px; height: 50px;" />
+    </a>
+</body>
+</html>
